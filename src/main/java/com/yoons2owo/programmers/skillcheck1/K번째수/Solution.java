@@ -1,8 +1,16 @@
-package com.yoons2owo.programmers.skillcheck1;
+package com.yoons2owo.programmers.skillcheck1.K번째수;
 
 import java.util.Arrays;
 
 class Solution {
+
+    public static void main(String[] args) {
+        Solution solution = new Solution();
+        int[] array = {1, 5, 2, 6, 3, 7, 4};
+        int[][] commands = {{2, 5, 3}, {4, 4, 1},{1, 7, 3}};
+        System.out.println(Arrays.toString(solution.mySolution(array, commands)));
+        System.out.println(Arrays.toString(solution.anotherSolution(array, commands)));
+    }
 
     public int[] mySolution(int[] array, int[][] commands) {
         int[] answer = {};
@@ -32,15 +40,5 @@ class Solution {
         }
         return answer;
 
-    }
-}
-class Main {
-
-    public static void main(String[] args) {
-        Solution solution = new Solution();
-        int[] array = {1, 5, 2, 6, 3, 7, 4};
-        int[][] commands = {{2, 5, 3}, {4, 4, 1},{1, 7, 3}};
-        System.out.println(Arrays.toString(solution.mySolution(array, commands)));
-        System.out.println(Arrays.toString(solution.mySolution(array, commands)));
     }
 }
