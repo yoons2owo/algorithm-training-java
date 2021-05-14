@@ -6,9 +6,9 @@ class Result {
 
     public static void countSwaps(List<Integer> a) {
         int swap = 0;
-        for (int i = 0; i < a.size(); i++) {
+        for (int i = 0; i < a.size() - 1; i++) {
             boolean swaped = false;
-            for (int j = 0; j < a.size() - 1; j++) {
+            for (int j = 0; j < a.size() - 1 - i; j++) {
                 if (a.get(j) > a.get(j + 1)) {
                     int temp = a.get(j);
                     a.set(j, a.get(j + 1));
